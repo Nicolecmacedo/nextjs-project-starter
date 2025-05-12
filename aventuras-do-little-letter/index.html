@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aventuras do Little Letter</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1>Aventuras do Little Letter</h1>
+      <div id="mascot">
+        <img src="public/mascot.png" alt="Mascote Little Letter" />
+        <div id="speech-balloon">Olá! Vamos aprender juntos?</div>
+      </div>
+    </header>
+
+    <main>
+      <section id="phase-container">
+        <h2>Fase 1: Associação de imagens e letras</h2>
+        <div id="instructions">Clique na letra que corresponde à imagem.</div>
+        <div id="image-container">
+          <img id="current-image" src="public/apple.png" alt="Imagem para associar" />
+        </div>
+        <div id="letters-container">
+          <!-- Letters buttons will be generated here -->
+        </div>
+      </section>
+
+      <section id="feedback" aria-live="polite"></section>
+    </main>
+
+    <footer>
+      <button id="next-button" disabled>Próxima</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
